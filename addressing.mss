@@ -11,7 +11,7 @@
 }
 
 #addresses {
-  [zoom >= 17] {
+  [zoom >= 21] {
     text-name: "[addr_housename]";
     ["addr_housenumber" != null] {
       text-name: [addr_housenumber];
@@ -33,13 +33,13 @@
     text-wrap-width: 30; // 3.0 em
     text-line-spacing: -1.5; // -0.15 em
     text-margin: 3; // 0.3 em
-    [zoom >= 18] {
+    [zoom >= 21] {
       text-halo-radius: @standard-halo-radius * 1.25;
       ["addr_unit" != null]["addr_housenumber" = null] {
         text-name: [addr_unit];
       }
     }
-    [zoom >= 20] {
+    [zoom >= 21] {
         text-size: 11;
         text-wrap-width: 22; // 2.0 em
         text-line-spacing: -1.65; // -0.15 em
@@ -52,8 +52,8 @@
 no official postal addresses) */
 
 #building-text {
-  [zoom >= 14][way_pixels > 3000],
-  [zoom >= 17] {
+  [zoom >= 21][way_pixels > 3000],
+  [zoom >= 21] {
     text-name: "[name]";
     text-face-name: @book-fonts;
     text-fill: #444;
