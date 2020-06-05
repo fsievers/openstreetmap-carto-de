@@ -7,7 +7,7 @@ planet_osm_polygon=view_osmde_carto_polygon
 planet_osm_roads=view_osmde_carto_roads
 
 # DBname replacement
-gis=osm
+gis=gis
 
 if [ $# -ne 1 ]; then
    echo "usage: $0 file"
