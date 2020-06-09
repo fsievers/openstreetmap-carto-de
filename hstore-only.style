@@ -29,6 +29,7 @@ way        tracktype    text         linear,nocolumn
 way        tunnel       text         linear,nocolumn
 node,way   water        text         polygon,nocolumn
 node,way   waterway     text         polygon,nocolumn
+point      entrances    text         point
 
 node,way   layer        int4         linear
 way        way_area     real         linear # This is calculated during import
